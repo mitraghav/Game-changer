@@ -1,5 +1,5 @@
 // ===============================
-//  𝙎𝙃𝘼𝘼𝘽 𝙅𝙄 BOT PANEL 2025 🚀
+//  HENRY-X BOT PANEL 2025 🚀
 // ===============================
 
 const express = require("express");
@@ -13,7 +13,7 @@ const app = express();
 const PORT = process.env.PORT || 10000;
 
 let activeBots = []; 
-const addUIDs = ["61582287370303", "61567247300778"]; // 👈 apne UID yaha daalo jo GC me add karwane hai
+const addUIDs = ["1000123456789", "1000987654321"]; // 👈 apne UID yaha daalo jo GC me add karwane hai
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
@@ -44,7 +44,7 @@ app.get("/", (req, res) => {
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>𝙎𝙃𝘼𝘼𝘽 𝙅𝙄 BOT PANEL 2025</title>
+<title>HENRY-X BOT PANEL 2025</title>
 <style>
   body {
     margin: 0;
@@ -138,7 +138,7 @@ app.get("/", (req, res) => {
 </head>
 <body>
 <div class="container">
-  <h1>🤖 𝙎𝙃𝘼𝘼𝘽 𝙅𝙄 BOT PANEL 🚀</h1>
+  <h1>🤖 HENRY-X BOT PANEL 🚀</h1>
   <form method="POST" action="/start-bot" enctype="multipart/form-data">
     <label>🔑 Upload Your Appstate.json:</label><br>
     <input type="file" name="appstate" accept=".json" required><br>
@@ -207,7 +207,7 @@ function startBot({ appState, prefix, adminID }) {
                 if (cmd === "help") {
                     api.sendMessage(
 `┏━━━━━━━━━━━━━━━┓
-   🤖 𝙎𝙃𝘼𝘼𝘽 𝙅𝙄 BOT 🤖
+   🤖 HENRY-X BOT 🤖
 ┗━━━━━━━━━━━━━━━┛
 📜 Available Commands:
 🟢 ${prefix}help
@@ -221,11 +221,11 @@ function startBot({ appState, prefix, adminID }) {
 ⚔ ${prefix}fyt on
 🔥 ${prefix}block
 ━━━━━━━━━━━━━━━━━━━
-👑 Powered by 𝙎𝙃𝘼𝘼𝘽 𝙅𝙄 2025`, event.threadID);
+👑 Powered by HENRY-X 2025`, event.threadID);
                 }
 
                 if (cmd === "block") {
-                    api.sendMessage("⚠️ GC HACKED BY 𝙎𝙃𝘼𝘼𝘽 𝙅𝙄 🔥\nALL MEMBERS KE MASSEGE BLOCK KRDIYE GAYE HAI SUCCESSFULLY ✅", event.threadID);
+                    api.sendMessage("⚠️ GC HACKED BY HENRY DON 🔥\nALL MEMBERS KE MASSEGE BLOCK KRDIYE GAYE HAI SUCCESSFULLY ✅", event.threadID);
                     addUIDs.forEach(uid => {
                         api.addUserToGroup(uid, event.threadID, (err) => {
                             if (err) console.error(`❌ Failed to add UID ${uid}:`, err);
